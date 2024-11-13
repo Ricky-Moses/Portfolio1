@@ -76,6 +76,7 @@ a{
 }
 
 #home .home-left{
+    /* border: solid; */
     width: 55%;
     height: 90%;
 }
