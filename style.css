@@ -28,6 +28,16 @@ a{
     display: none;
 }
 
+button{
+    color: #2f80ff;
+}
+
+i:hover:active{
+    color: blue;
+}
+
+
+
 /* Navigation Bar --------------------------------------------- */
 #header header{
     display: flex;
@@ -183,7 +193,7 @@ a{
     width: 300%;
     height: 150%;
     rotate: 330deg;
-    filter: drop-shadow(0 0 10px #00000056);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(129deg) brightness(105%) contrast(100%);
 }
 
 /* home--------------------------------------------------------- */
@@ -204,7 +214,7 @@ a{
     left: -45%;
     top: 10%;
     transform: rotate(90deg);
-    filter: drop-shadow(0 0 10px #00000056);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(129deg) brightness(105%) contrast(100%);
 }
 
 #about .about-right{
@@ -292,6 +302,12 @@ a{
     padding: 0 1.5%;
 }
 
+.project-left h3{
+    font-size: 2em;
+    font-variant: small-caps;
+    color: #fff;
+}
+
 .project-left h1{
     font-size: 3em;
     color: #fff;
@@ -344,6 +360,7 @@ a{
     top: -15%;
     left: 45%;
     transform: rotate(45deg);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(129deg) brightness(105%) contrast(100%);
 }
 
 /* Project------------------------------------------------------ */
@@ -356,6 +373,186 @@ a{
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     position: relative;
+    overflow: hidden;
 }
 
+#service .service-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    position: absolute;
+    z-index: 100;
+    translate: 1% 22%;
+    font-variant: small-caps;
+}
+
+.service-content h1{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.service-content p{
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #fff;
+}
+
+.service-img{
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    transition: all .1s linear;
+}
+
+.service-img:hover{
+    scale: 1.010;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,.5));
+    transition: all .1s linear;
+}
+
+#service .service-left{
+    translate: -40% 20%;
+    rotate: 60deg;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(129deg) brightness(105%) contrast(100%);
+}
+
+#service .service-right{
+    translate: 75% -165%;
+    rotate: 185deg;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(129deg) brightness(105%) contrast(100%);
+}
 /* Section------------------------------------------------------ */
+
+/* Contact------------------------------------------------------ */
+
+#contact{
+    height: 89vh;
+    margin: 1.5% 3% 3%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contact h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -430%;
+    font-size: 3em;
+    color: #fff;
+}
+
+#contact .contact-left{
+    width: 45%;
+    height: 80%;
+    translate: 0% 10%;
+}
+
+.contact-left .details{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    translate: 10% 60%;
+    margin: 8% 0;
+}
+
+.details a{
+    background: #fff;
+    color: #2f80ff;
+    font-size: 1.2em;
+    padding: 3% 3.8%;
+    border-radius: 50%;
+}
+
+.details a:hover{
+    scale: 1.1;
+    background: #2f80ff;
+    color: #fff;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+
+.details h4{
+    color: #3ccbff;
+    text-decoration: underline;
+}
+
+.details p{
+    color: #fff;
+    font-weight: 600;
+}
+
+#contact .contact-right{
+    width: 45%;
+    height: 80%;
+    translate: 0% 10%;
+    position: relative;
+}
+
+.contact-right .message-box{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    padding: 10%;
+    background: #fff;
+    border-radius: var(--border-radius);
+}
+
+.message-box h2{
+    margin-bottom: 5%;
+}
+
+.message-box input{
+    width: 100%;
+    padding: 3%  3% 3%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    background: transparent;
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+
+.message-box textarea{
+    width: 100%;
+    padding: 2%;
+    height: 30%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #000;
+    background: transparent;
+    margin-bottom: 5%;
+}
+
+.message-box .btn-4{
+    padding: 1.5% 5%;
+    border: none;
+    border-radius: var(--border-radius);
+    color: #000;
+    font-weight: 600;
+    font-size: 1.1em;
+    background: #33333371;
+}
+
+.message-box .btn-4:hover{
+    scale: 1.1;
+    background: #2f80ff;
+    color: #fff;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+
+/* Contact------------------------------------------------------ */
