@@ -28,6 +28,7 @@ a{
     display: none;
 }
 
+/* Navigation Bar --------------------------------------------- */
 #header header{
     display: flex;
     align-items: center;
@@ -62,7 +63,9 @@ a{
     color: #fff;
 }
 
-/* home */
+/* Navigation Bar --------------------------------------------- */
+
+/* home-------------------------------------------------------- */
 
 #home{
     height: 89vh;
@@ -76,7 +79,6 @@ a{
 }
 
 #home .home-left{
-    /* border: solid; */
     width: 55%;
     height: 90%;
     padding: 8% 4% 0%;
@@ -184,15 +186,176 @@ a{
     filter: drop-shadow(0 0 10px #00000056);
 }
 
-/* home */
+/* home--------------------------------------------------------- */
 
-/* About */
+/* About-------------------------------------------------------- */
 
 #about{
     height: 89vh;
     margin: 1.5% 3% 3%;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
 }
 
-/* About */
+#about .about-left{
+    position: absolute;
+    left: -45%;
+    top: 10%;
+    transform: rotate(90deg);
+    filter: drop-shadow(0 0 10px #00000056);
+}
+
+#about .about-right{
+    width: 60%;
+    float: right;
+    height: 65%;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-left: 1%;
+}
+
+.about-right h1{
+    font-size: 3em;
+    color: #fff;
+}
+
+.about-right p{
+    font-weight: 600;
+    color: #fff;
+    line-height: 250%;
+    max-width: 90%;
+}
+
+.about-right .btn-2{
+    position: absolute;
+    left: 12%;
+    padding: 1% 3%;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+.about-right .btn-2:hover{
+    transform: scale(1.1);
+    color: #fff;
+    background: #2f80ff;
+    box-shadow: var(--shadow);
+}
+
+.about-right .social-media-1{
+    position: absolute;
+    left: 35%;
+    top: 77%;
+    /* border: solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 17%;
+}
+
+.about-right .social-media-1 i{
+    font-size: 2em;
+    margin-left: 2%;
+    color: #fff;
+}
+
+.about-right .social-media-1 i:hover{
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* About------------------------------------------------------- */
+
+/* Project----------------------------------------------------- */
+
+#project{
+    height: 89vh;
+    margin: 1.5% 3% 3%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+#project .project-left{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.5%;
+}
+
+.project-left h1{
+    font-size: 3em;
+    color: #fff;
+}
+
+.project-left p{
+    max-width: 85%;
+    font-weight: 600;
+    color: #fff;
+    line-height: 250%;
+}
+
+.project-left .btn-3{
+    padding: 1% 3%;
+    border-radius: var(--border-radius);
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 2%;
+    border: none;
+}
+
+.project-left .btn-3:hover{
+    transform: scale(1.1);
+    background: #2f80ff;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.project-left .social-media-2{
+    width: 18%;
+    margin-top: 2.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-left .social-media-2 i{
+    font-size: 2em; 
+    color: #fff;
+}
+
+.project-left .social-media-2 i:hover{
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#project .project-right{
+    position: absolute;
+    top: -15%;
+    left: 45%;
+    transform: rotate(45deg);
+}
+
+/* Project------------------------------------------------------ */
+
+/* Section------------------------------------------------------ */
+
+#service{
+    height: 89vh;
+    margin: 1.5% 3% 3%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+/* Section------------------------------------------------------ */
