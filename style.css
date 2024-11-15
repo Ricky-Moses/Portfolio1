@@ -848,14 +848,14 @@ i:hover:active{
     /* Home */
 
     #home{
-        height: 80vh;
+        height: 70vh;
     }
 
     #home .home-head-img{
         display: block;
-        width: 50%;
-        height: 35%;
-        top: 5%;
+        width: 35%;
+        height: 30%;
+        top: 2%;
         border-radius: 50%;
         border: solid;
     }
@@ -869,7 +869,7 @@ i:hover:active{
     #home .home-left{
         width: 100%;
         position: absolute;
-        top: 40%;
+        top: 30%;
     }
 
     #home h2{
