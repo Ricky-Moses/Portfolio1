@@ -849,9 +849,9 @@ i:hover:active{
 
     #home .home-head-img{
         display: block;
-        width: 70%;
+        width: 60%;
         height: 35%;
-        top: 1%;
+        top: 5%;
         border-radius: 50%;
         border: solid;
     }
@@ -865,7 +865,7 @@ i:hover:active{
     #home .home-left{
         width: 100%;
         position: absolute;
-        top: 36%;
+        top: 40%;
     }
 
     #home h2{
