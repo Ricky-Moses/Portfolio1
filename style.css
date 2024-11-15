@@ -847,9 +847,13 @@ i:hover:active{
 
     /* Home */
 
+    #home{
+        height: 80vh;
+    }
+
     #home .home-head-img{
         display: block;
-        width: 60%;
+        width: 50%;
         height: 35%;
         top: 5%;
         border-radius: 50%;
