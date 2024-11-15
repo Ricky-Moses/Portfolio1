@@ -373,6 +373,10 @@ i:hover:active{
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(129deg) brightness(105%) contrast(100%);
 }
 
+#project .gallery{
+    display: none;
+}
+
 /* Project------------------------------------------------------ */
 
 /* service------------------------------------------------------ */
@@ -384,6 +388,10 @@ i:hover:active{
     box-shadow: var(--shadow);
     position: relative;
     overflow: hidden;
+}
+
+#service .img{
+    display: none;
 }
 
 #service .service-content{
@@ -827,7 +835,7 @@ i:hover:active{
 }
 
 
-@media (max-width:400px){
+@media (max-width:450px){
     /* Header */
     #header nav{
         width: 90%;
