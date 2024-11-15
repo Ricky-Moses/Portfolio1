@@ -47,6 +47,7 @@ i:hover:active{
     margin: 1%;
     border-radius: var(--border-radius);
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: relative;
 }
 
 #header .logo{
@@ -86,6 +87,12 @@ i:hover:active{
     align-items: center;
     justify-content: space-around;
     overflow: hidden;
+    position: relative;
+}
+
+#home .home-head-img{
+    display: none;
+    position: absolute;
 }
 
 #home .home-left{
@@ -124,7 +131,7 @@ i:hover:active{
     color: #fff;
     white-space: nowrap;
     overflow: hidden;
-    animation: fill-text 4s linear infinite;
+    animation: fill-text 10s linear infinite;
 }
 
 @keyframes fill-text{
@@ -262,7 +269,6 @@ i:hover:active{
     position: absolute;
     left: 35%;
     top: 77%;
-    /* border: solid; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -291,6 +297,10 @@ i:hover:active{
     box-shadow: var(--shadow);
     position: relative;
     overflow: hidden;
+}
+
+#project #check-1{
+    display: none;
 }
 
 #project .project-left{
@@ -365,7 +375,7 @@ i:hover:active{
 
 /* Project------------------------------------------------------ */
 
-/* Section------------------------------------------------------ */
+/* service------------------------------------------------------ */
 
 #service{
     height: 89vh;
@@ -385,6 +395,10 @@ i:hover:active{
     z-index: 100;
     translate: 1% 22%;
     font-variant: small-caps;
+}
+
+#service .service-content-1{
+    display: none;
 }
 
 .service-content h1{
@@ -424,7 +438,7 @@ i:hover:active{
     rotate: 185deg;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(129deg) brightness(105%) contrast(100%);
 }
-/* Section------------------------------------------------------ */
+/* service------------------------------------------------------ */
 
 /* Contact------------------------------------------------------ */
 
@@ -556,3 +570,306 @@ i:hover:active{
 
 
 /* Contact------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+
+    /* Header */
+    #header nav{
+        border: solid;
+        width: 50%;
+        height: 80vh;
+        position: absolute;
+        top: 115%;
+        left: 0;
+        z-index: 10;
+        background: #000;
+        border-radius: var(--border-radius);
+        height: 0%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        transition: all 1s;
+        background: rgba(47,128,255,.8);
+        border: transparent;
+    }
+
+    nav ul{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    nav ul li{
+        border-bottom: 1px solid #fff;
+        width: 400%;
+        text-align: center;
+    }
+
+    #check:checked ~ nav{
+        height: 800%;
+    }
+
+    #header label{
+        display: block;
+        font-size: 1.5em;
+        color: #fff;
+    }
+    /* Header */
+
+
+    /* Home */
+
+    #home .home-left{
+        position: absolute;
+        /* border: solid; */
+        padding: 0 0 0 2%;
+        top: 10%;
+        left: 0;
+        width: 70%;
+        height: fit-content;
+    }
+
+    #home img{
+        /* display: none; */
+        left: 55%;
+    }
+
+    /* Home */
+
+    /* About */
+
+    #about .about-left{
+        translate: -50%;
+    }
+
+    #about .about-right{
+        padding: 0;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        translate: 0 20%;
+        width: 58%;
+        height: 60vh;
+        position: relative;
+    }
+
+    .about-right .span-1{
+        position: absolute;
+        top: 70%;
+        left: 7%;
+    }
+
+    .about-right .btn-2{
+        left: 33%;
+    }
+
+    .about-right .social-media-1{
+        top: 91%;
+        width: 30%;
+    }
+
+    /* About */
+
+
+    /* Project */
+
+    #project .project-left{
+        width: 80%;
+        height: 90%;
+        padding: 2%;
+    }
+
+    .project-left .social-media-2{
+        width: 25%;
+    }
+
+    #project .project-right{
+        top: 50%;
+        left: 50%;
+    }
+
+    #project label{
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 1.5em;
+        color: #fff;
+    }
+
+    #project .gallery{
+        position: absolute;
+        width: 0;
+        height: 80vh;
+        top: 0;
+        left: 0;
+        border-radius: var(--border-radius);
+        background: rgba(47,128,255,.7);
+        transition: all .8s linear;
+        overflow: scroll;
+    }
+
+    .gallery img{
+        border-radius: var(--border-radius);
+        width: 70%;
+        translate: 20% 10%;
+        filter: drop-shadow(0 0 10px rgba(0,0,0,.5));
+    }
+
+    .gallery :nth-child(3){
+        height: 40vh;
+    }
+    .gallery :nth-child(4){
+        height: 40vh;
+    }
+
+    #check-1:checked ~ .gallery{
+        width: 70%;
+    }
+
+    /* Project */
+
+    /* Service */
+
+    #service .service-content{
+        display: none;
+    }
+
+    #service .service-content-1{
+        display: block;
+        width: 50%;
+        height: 90vh;
+        translate: 1% 5%;
+        text-align: justify;
+        color: #fff;
+    }
+
+    #service .service-content-1 h1{
+        font-size: 3em;
+    }
+
+    #service .service-content-1 p{
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+    #service img{
+        display: none;
+    }
+
+    #service .img{
+        position: absolute;
+        top: 17%;
+        right: 3%;
+        width: 45%;
+        height: 70%;
+        border: solid;
+    }
+
+    .img .slide{
+        position: absolute;
+        left: 20%;
+        bottom: 0;
+        width: 0;
+        height: 15%;
+        transition: all .50s linear;
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .slide i{
+        color: #000;
+        font-size: 2em;
+    }
+
+    .img .slide-icon{
+        position: absolute;
+        bottom: 0;
+        width: 20%;
+        height: 15%;
+        background: #fff;
+    }
+
+    .slide-icon i{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5em;
+    }
+
+
+    .img:hover .slide{
+        width: 80%;
+    }
+
+    /* Service */
+}
+
+
+@media (max-width:340px){
+    /* Header */
+    #header nav{
+        width: 90%;
+        top: 110%;
+        left: 5%;
+    }
+    /* Header */
+
+
+    /* Home */
+
+    #home .home-head-img{
+        display: block;
+        width: 70%;
+        height: 35%;
+        top: 1%;
+        border-radius: 50%;
+        border: solid;
+    }
+
+    .home-head-img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    #home .home-left{
+        width: 100%;
+        position: absolute;
+        top: 36%;
+    }
+
+    #home h2{
+        font-size: 2em;
+    }
+
+    #home .social-media{
+        width: 40%;
+    }
+
+    #home img{
+        display: none;
+    }
+    /* Home */
+}
