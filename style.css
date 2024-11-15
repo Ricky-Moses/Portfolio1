@@ -827,7 +827,7 @@ i:hover:active{
 }
 
 
-@media (max-width:340px){
+@media (max-width:370px){
     /* Header */
     #header nav{
         width: 90%;
